@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои заметки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Мои заметки</h1>
+        <div class="note-list-container">
+            <h2>Список заметок:</h2>
+            <ul id="noteList">
+                <li><a href="edit.html?id=1">Заметка 1</a></li>
+                <li><a href="edit.html?id=2">Заметка 2</a></li>
+                <li><a href="edit.html?id=3">Заметка 3</a></li>
+            </ul>
+        </div>
+        <form action="edit.html" method="GET">
+            <input type="text" name="note_name" placeholder="Введите имя заметки" required>
+            <button type="submit">Создать новую заметку</button>
+        </form>
+        <br>
+        <a href="login.html"><button>Выйти</button></a>
+    </div>
+</body>
+</html>
