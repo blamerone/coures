@@ -7,15 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="accessibility-controls">
-        <a href="index-large-font.html" class="button">Версия для слабовидящих (увеличенный шрифт)</a>
-        <a href="index-high-contrast.html" class="button">Версия для слабовидящих (высокая контрастность)</a>
-    </div>
-
     <header>
         <div class="container">
             <img src="logo.png" alt="Логотип сайта Мои заметки" class="logo">
-            <h1>Мои заметки</h1>
             <nav aria-label="Основное меню">
                 <a href="index.html">Главная</a>
                 <a href="login.html">Выйти</a>
@@ -24,6 +18,18 @@
     </header>
 
     <main class="container">
+        <!-- Контейнер для видео с Rutube -->
+        <div class="video-container">
+            <iframe 
+                width="100%" 
+                height="400" 
+                src="https://rutube.ru/embed/8df4352355d81823b652d9e86f7c77de/" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
         <section class="note-list-container">
             <h2>Список заметок:</h2>
             <ul id="noteList">
