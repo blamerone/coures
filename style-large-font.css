@@ -1,0 +1,8 @@
+body {
+    font-size: 20px;
+}
+
+button, input, textarea {
+    font-size: 20px;
+    padding: 15px;
+}

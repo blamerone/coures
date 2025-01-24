@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои заметки</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Мои заметки (высокая контрастность)</title>
+    <link rel="stylesheet" href="style-high-contrast.css">
 </head>
 <body>
     <div class="accessibility-controls">
-        <a href="index-large-font.html" class="button">Версия для слабовидящих (увеличенный шрифт)</a>
-        <a href="index-high-contrast.html" class="button">Версия для слабовидящих (высокая контрастность)</a>
+        <a href="index.html" class="button">Обычная версия</a>
+        <a href="index-large-font.html" class="button">Увеличенный шрифт</a>
     </div>
 
     <header>
         <div class="container">
             <img src="logo.png" alt="Логотип сайта Мои заметки" class="logo">
-            <h1>Мои заметки</h1>
+            <h1>Мои заметки (высокая контрастность)</h1>
             <nav aria-label="Основное меню">
-                <a href="index.html">Главная</a>
-                <a href="login.html">Выйти</a>
+                <a href="index-high-contrast.html">Главная</a>
+                <a href="login-high-contrast.html">Выйти</a>
             </nav>
         </div>
     </header>
@@ -27,15 +27,15 @@
         <section class="note-list-container">
             <h2>Список заметок:</h2>
             <ul id="noteList">
-                <li><a href="edit.html">Заметка 1</a></li>
-                <li><a href="edit.html">Заметка 2</a></li>
-                <li><a href="edit.html">Заметка 3</a></li>
+                <li><a href="edit-high-contrast.html">Заметка 1</a></li>
+                <li><a href="edit-high-contrast.html">Заметка 2</a></li>
+                <li><a href="edit-high-contrast.html">Заметка 3</a></li>
             </ul>
         </section>
 
         <section class="create-note">
             <h2>Создать новую заметку</h2>
-            <form action="edit.html" method="GET">
+            <form action="edit-high-contrast.html" method="GET">
                 <label for="note_name">Имя заметки:</label>
                 <input type="text" id="note_name" name="note_name" placeholder="Введите имя заметки" required>
                 <button type="submit">Создать</button>
