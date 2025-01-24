@@ -10,24 +10,32 @@
     <header>
         <div class="container">
             <h1>Мои заметки</h1>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="login.html">Выйти</a>
+            </nav>
         </div>
     </header>
-    <div class="container">
-        <div class="note-list-container">
+
+    <main class="container">
+        <section class="note-list-container">
             <h2>Список заметок:</h2>
             <ul id="noteList">
                 <li><a href="edit.html?id=1">Заметка 1</a></li>
                 <li><a href="edit.html?id=2">Заметка 2</a></li>
                 <li><a href="edit.html?id=3">Заметка 3</a></li>
             </ul>
-        </div>
-        <form action="edit.html" method="GET">
-            <input type="text" name="note_name" placeholder="Введите имя заметки" required>
-            <button type="submit">Создать новую заметку</button>
-        </form>
-        <br>
-        <a href="login.html"><button>Выйти</button></a>
-    </div>
+        </section>
+
+        <section class="create-note">
+            <h2>Создать новую заметку</h2>
+            <form action="edit.html" method="GET">
+                <input type="text" name="note_name" placeholder="Введите имя заметки" required>
+                <button type="submit">Создать</button>
+            </form>
+        </section>
+    </main>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 Мои заметки. Все права защищены.</p>

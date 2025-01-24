@@ -10,19 +10,40 @@
     <header>
         <div class="container">
             <h1>Редактирование заметки</h1>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="login.html">Выйти</a>
+            </nav>
         </div>
     </header>
-    <div class="container">
+
+    <main class="container">
         <textarea id="noteEditor" placeholder="Введите текст вашей заметки здесь..."></textarea>
         <div class="buttons">
-            <a href="index.html"><button>Сохранить и вернуться</button></a>
-            <a href="index.html"><button>Удалить и вернуться</button></a>
+            <button onclick="saveNote()">Сохранить и вернуться</button>
+            <button onclick="deleteNote()">Удалить и вернуться</button>
         </div>
-    </div>
+    </main>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 Мои заметки. Все права защищены.</p>
         </div>
     </footer>
+
+    <script>
+        function saveNote() {
+            alert("Заметка сохранена!");
+            window.location.href = "index.html";
+        }
+
+        function deleteNote() {
+            const confirmDelete = confirm("Вы уверены, что хотите удалить заметку?");
+            if (confirmDelete) {
+                alert("Заметка удалена!");
+                window.location.href = "index.html";
+            }
+        }
+    </script>
 </body>
 </html>
