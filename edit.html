@@ -18,11 +18,14 @@
     </header>
 
     <main class="container">
-        <textarea id="noteEditor" placeholder="Введите текст вашей заметки здесь..."></textarea>
-        <div class="buttons">
-            <button onclick="saveNote()">Сохранить и вернуться</button>
-            <button onclick="deleteNote()">Удалить и вернуться</button>
-        </div>
+        <form action="index.html" method="GET">
+            <label for="noteEditor">Текст заметки:</label>
+            <textarea id="noteEditor" name="noteEditor" placeholder="Введите текст вашей заметки здесь..." required></textarea>
+            <div class="buttons">
+                <button type="submit">Сохранить и вернуться</button>
+                <a href="index.html" class="button">Удалить и вернуться</a>
+            </div>
+        </form>
     </main>
 
     <footer>
@@ -30,20 +33,5 @@
             <p>&copy; 2025 Мои заметки. Все права защищены.</p>
         </div>
     </footer>
-
-    <script>
-        function saveNote() {
-            alert("Заметка сохранена!");
-            window.location.href = "index.html";
-        }
-
-        function deleteNote() {
-            const confirmDelete = confirm("Вы уверены, что хотите удалить заметку?");
-            if (confirmDelete) {
-                alert("Заметка удалена!");
-                window.location.href = "index.html";
-            }
-        }
-    </script>
 </body>
 </html>
