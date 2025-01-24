@@ -7,10 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="accessibility-controls">
+        <label for="large-font">Увеличить шрифт</label>
+        <input type="checkbox" id="large-font" class="accessibility-toggle">
+
+        <label for="high-contrast">Высокая контрастность</label>
+        <input type="checkbox" id="high-contrast" class="accessibility-toggle">
+    </div>
+
     <header>
         <div class="container">
+            <img src="logo.png" alt="Логотип сайта Мои заметки" class="logo">
             <h1>Вход</h1>
-            <nav>
+            <nav aria-label="Основное меню">
                 <a href="index.html">Главная</a>
             </nav>
         </div>
